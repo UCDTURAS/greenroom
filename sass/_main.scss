@@ -1,0 +1,86 @@
+/*
+ * Main styles, written in SCSS.
+ * Examples taken from http://sass-lang.com/guide
+ *
+
+ */
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background: $body-green;
+  font: 100% Helvetica, sans-serif;
+  font-family: 'Josefin Slab', serif;
+  color: #153D29;
+  background: #2D8A5C;
+  font-weight: 700;
+  
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+.container { width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complimentary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+h1{font-size: 15em}
+
+.container {
+    max-width: 680px;
+    padding: 0 15px;
+    width: auto;
+}
+li{display: inline-block;}
+.fa {
+    display: block;
+    text-align: center;
+}
+p{font-size: 1em}
+.h1, h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
